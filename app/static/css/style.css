@@ -57,3 +57,11 @@ IMG.displayed {
    background-color: #e3efe8;
 background-image: linear-gradient(315deg, #e3efe8 0%, #96a7cf 74%);
 }
+
+.ms-1 {
+  margin-left: 3px;
+}
+
+.ms-1 {
+  margin-top: 3px;
+}

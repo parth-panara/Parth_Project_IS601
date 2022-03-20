@@ -1,240 +1,321 @@
-{% extends "base.html" %}
-{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <h6> <span style="float:right">Page 3</span></h6>
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-              crossorigin="anonymous">
-        {% block head %}
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+        <title>Parth_IS601</title>
+    {% endblock %}
+</head>
+<body>
 
-            <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
-        {% endblock %}
-    </head>
-    <div class="container">
-        <header class="mt-12">
+
+<div class="container">
+    <div id="menubar" class="Menubar_color">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-4 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+                <div id="heading" class="p1 tab5 myweb_font_color">
+                    <h2><strong>
+                        <span class="fs-4" style="font-size: 400px;">My Website</span></strong></h2>
+                </div>
+            </a>
             <div id="heading" class="p1">
-                <h2><strong>Python/ Flask</strong></h2>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/python">Python/Flask</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+                </ul>
             </div>
         </header>
+    </div>
 
-        <div id="heading" class="p1">
-            <br>
-            <h3>Pytest: </h3>
-        </div>
-        <div id="paragraph" class="paraFont p1">
-            Pytest is a testing framework that lets users build test scripts in Python. It aids in the creation of
+
+    <div class="row">
+        <div class="col-8">
+            <header class="mt-12">
+                <div id="heading" class="p1">
+                    <h2><strong>Python/ Flask</strong></h2>
+                </div>
+            </header>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3>Pytest: </h3>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                Pytest is a testing framework that lets users build test scripts in Python. It aids in the creation of
                 easy and scalable test cases for databases, APIs, and user interfaces. Pytest is mostly used for
                 writing API tests. It aids with the development of tests ranging from simple unit tests to large
                 functional tests.
-            <div id="heading" class="p1">
-                <h4>Testing with Pytest: </h4>
+                <div id="heading" class="p1">
+                    <h4>Testing with Pytest: </h4>
                 </div>
-                 Pytest has many advantages in terms of testing. It is easy and simple syntax. Therefore, it’s easy
-                 to start. It can run tests in parallel.
-                 It can run a specific test or a subset of tests. It detects tests automatically and skip tests.
+                Pytest has many advantages in terms of testing. It is easy and simple syntax. Therefore, it’s easy
+                to start. It can run tests in parallel.
+                It can run a specific test or a subset of tests. It detects tests automatically and skip tests.
+
+                <div style="width:610px;height:278px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 600px;">
+                            <img src="{{ url_for('static', filename='images/python page pics/pytest.jpg') }}"
+                                 class="d-block w-100" style="vertical-align:middle"><br>
+                            <h6 style="text-align:center">image(a) Example of Pytest syntax for my Docker page
+                                menubar</h6></div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="heading" class="p1">
+                    <br>
+                    <h3>Creating simple pages and testing: </h3>
+                </div>
+                <p>
+                    ‘Simple page’ is a page that we can put on web. It uses a feature in flask called ‘blueprint’. A
+                    blueprint is a package of controller where controller
+                    works as a module/ plugin. So we start to making a blueprint. Therefore, I will make a ‘init_.py
+                    ‘file
+                    in the folder templates of ’simple pages’ folder. In the
+                    flask app, I will have framed of that blueprint which has route, controller in it. ‘route’ sets the
+                    variable called ‘page’. Due to having this variable, I can make a
+                    html file called ‘page’. This ‘page’ would be my html file. For Instance, i can make a page1.html
+                    file
+                    to put my web content in the same folder where I
+                    have ‘init_py‘ file.
+                </p>
 
 
-            <div id="heading" class="p1">
+                <div style="width:610px;height:308px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 600px;">
+                            <img src="{{ url_for('static', filename='images/python page pics/init_py.jpg') }}"
+                                 class="d-block w-100" style="vertical-align:middle"><br>
+                            <h6 style="text-align:center">image(b) Example of int_py file in my flask app</h6></div>
+                    </div>
+                </div>
+
                 <br>
-                <h3>Creating simple pages and testing: </h3>
-            </div>
-            <p>
-                ‘Simple page’ is a page that we can put on web. It uses a feature in flask called ‘blueprint’. A
-                blueprint is a package of controller where controller
-                works as a module/ plugin. So we start to making a blueprint. Therefore, I will make a ‘init_.py ‘file
-                in the folder templates of ’simple pages’ folder. In the
-                flask app, I will have framed of that blueprint which has route, controller in it. ‘route’ sets the
-                variable called ‘page’. Due to having this variable, I can make a
-                html file called ‘page’. This ‘page’ would be my html file. For Instance, i can make a page1.html file
-                to put my web content in the same folder where I
-                have ‘init_py‘ file.
-            </p>
-            <p>
-                To creat a simple page, below process is explained with steps and examples.
-            </p>
-            <h5>Step 1.</h5>
-            <ul style="list-style-type:circle;">
-                <li>I have docker_flask file in my local computer . This file contains hierarchical framework for web
-                    hosting work . I open this project file in Pycharm
-                    software. Then, I can also run docker container for the docker file of this project and get a
-                    successful running logs.
-                </li>
-                <li>Next, I go to the ‘app’ folder of my project and then go in ‘simple pages’ sub-folder. I have a
-                    ‘templates’ folder there. I press right-click on the
-                    folder and creat a ‘page2.html’ file.
-                </li>
-            </ul>
-            <h5>Step 2.</h5>
-            <ul style="list-style-type:circle;">
-                <li>I have a ‘simple_pages_test.py’ file in my test folder of the project. I use this file for my
-                    pytest. Therefore, I will add below-mentioned code for testing my ‘page2’.
-                    <br>Code: def test_request_page2(client)
-                    <div id="margin" class="tab3">"""This makes the index page"""</div>
-                    <div id="margin" class="tab3">response = client.get("/page2")</div>
-                    <div id="margin" class="tab3">assert response.status_code == 200</div>
-                    <div id="margin" class="tab3">assert b"Page 2" in response.data</div>
-                </li>
-            </ul>
-            <h5>Step 3.</h5>
-            <ul style="list-style-type:circle;">
-                <li>
-                    I open the page2. html file and put the 'page 2' name between curly percentage brackets like
-                    {'%block content%'} and {'%end block%'} as a syntax content in my file. So, I can run
-                    this page in my pytest.
-                </li>
-            </ul>
-            <h5>Step 4.</h5>
-            <ul style="list-style-type:circle;">
-                <li>
-                    I go to the terminal. In the service option from menubar, I can see my running services for
-                    ‘/docekr_flask-flsk-1’ file. I
-                    right-click on that file and then create a terminal, if I don’t have an open terminal at this place.
-                </li>
-            </ul>
-            <h5>Step 5.</h5>
-            <ul style="list-style-type:circle;">
-                <li>
-                    I can write the below-mentioned command in the terminal to run pytest.
-                    <br>Command: pytest
-                </li>
-            </ul>
-            <div id="heading" class="p1">
                 <br>
-                <h3>Link to the flask project on GitHub: </h3>
+
+
+                <p>
+                    To creat a simple page, below process is explained with steps and examples.
+                </p>
+                <h5>Step 1.</h5>
+                <ul style="list-style-type:circle;">a
+                    <li>I have docker_flask file in my local computer . This file contains hierarchical framework for
+                        web
+                        hosting work . I open this project file in Pycharm
+                        software. Then, I can also run docker container for the docker file of this project and get a
+                        successful running logs.
+                    </li>
+                    <li>Next, I go to the ‘app’ folder of my project and then go in ‘simple pages’ sub-folder. I have a
+                        ‘templates’ folder there. I press right-click on the
+                        folder and creat a ‘page2.html’ file.
+                    </li>
+                </ul>
+                <h5>Step 2.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>I have a ‘simple_pages_test.py’ file in my test folder of the project. I use this file for my
+                        pytest. Therefore, I will add below-mentioned code for testing my ‘page2’.
+                        <br>Code: def test_request_page2(client)
+                        <div id="margin" class="tab3">"""This makes the index page"""</div>
+                        <div id="margin" class="tab3">response = client.get("/page2")</div>
+                        <div id="margin" class="tab3">assert response.status_code == 200</div>
+                        <div id="margin" class="tab3">assert b"Page 2" in response.data</div>
+                    </li>
+                </ul>
+                <h5>Step 3.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>
+                        I open the page2. html file and put the 'page 2' name between curly percentage brackets like
+                        {'%block content%'} and {'%end block%'} as a syntax content in my file. So, I can run
+                        this page in my pytest.
+                    </li>
+                </ul>
+                <h5>Step 4.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>
+                        I go to the terminal. In the service option from menubar, I can see my running services for
+                        ‘/docekr_flask-flsk-1’ file. I
+                        right-click on that file and then create a terminal, if I don’t have an open terminal at this
+                        place.
+                    </li>
+                </ul>
+                <h5>Step 5.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>
+                        I can write the below-mentioned command in the terminal to run pytest.
+                        <br>Command: pytest
+                    </li>
+                </ul>
+                <div id="heading" class="p1">
+                    <br>
+                    <h3>Link to the flask project on GitHub: </h3>
+                </div>
+                I would like to explain this process by using pycharm software.
+                <h5>Step 1.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>
+                        I need to make a repository on my GitHub account. I get a repository link, copy it and Then, in
+                        PyCharm, I select the ‘Git’ option from Menubar and go
+                        to manage remotes. In the mange remotes, I add my GitHub account link by doing paste.
+                    </li>
+                </ul>
+                <h5>Step 2.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>After completing the previously mentioned testing and simple pages work as a flask Blueprint
+                        documentation and flask testing with PyTest,
+                        I am ready to push the project work on GitHub account repository.
+                    </li>
+                </ul>
+                <h5>Step 3.</h5>
+                <ul style="list-style-type:circle;">
+                    <li>
+                        I go to the Git >>Commit. Here, I can write a comment for the work what I did and then click on
+                        push
+                        option by selecting GitHub repository
+                        origin.
+                    </li>
+                </ul>
+
+
             </div>
-            I would like to explain this process by using pycharm software.
-            <h5>Step 1.</h5>
-            <ul style="list-style-type:circle;">
-                <li>
-                    I need to make a repository on my GitHub account. I get a repository link, copy it and Then, in
-                    PyCharm, I select the ‘Git’ option from Menubar and go
-                    to manage remotes. In the mange remotes, I add my GitHub account link by doing paste.
-                </li>
-            </ul>
-            <h5>Step 2.</h5>
-            <ul style="list-style-type:circle;">
-                <li>After completing the previously mentioned testing and simple pages work as a flask Blueprint
-                    documentation and flask testing with PyTest,
-                    I am ready to push the project work on GitHub account repository.
-                </li>
-            </ul>
-            <h5>Step 3.</h5>
-            <ul style="list-style-type:circle;">
-                <li>
-                    I go to the Git >>Commit. Here, I can write a comment for the work what I did and then click on push
-                    option by selecting GitHub repository
-                    origin.
-                </li>
-            </ul>
-            <div id="heading" class="p1">
-                <br>
-                <h3>The purpose of every file in the project: </h3>
+
+        </div>
+
+
+
+        <div class="col">
+            <br>
+            <br>
+            <br>
+            <div class="paraFont p1">
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 400px;">
+                    <a href="https://www.python.org/"><img
+                            src="https://edusera.org/wp-content/uploads/2021/07/beOFkU-2048x1280.jpg"
+                            class="d-block w-100" alt="..."></a><br>
+                    <h6>Click on the image to visit the Python official site today!</h6></div>
+                <hr>
             </div>
-              <div id="margin" class="tab4">
-                Project flask(root)\ >>
+
+
+            <div style="width:405px;height:2100px;border:3px solid #c2d4dd;">
+                <div id="paragraph" class="paraFont p1">
+                    <div id="heading" class="p1">
+                        <br>
+                        <h3>The purpose of files in the project: </h3>
+                    </div>
+                    <br>
+                    <div id="margin" class="tab4">
+                        Project flask(root)\ >>
+                    </div>
+                    <ul style="list-style-type:circle;">
+                        <li>docker-compose.yml :- Orchestration file that contains the configuration to develop locally,
+                            it
+                            overrides the Dockerfile to run the flask development
+                            server instead of running the gunicorn server that is used for hosting on Heroku
+                        <li>Dockerfile:- File used to create an image to run in a container that runs the program
+                        <li>readme.md :- It is likely the first file a reader encounters when they browse a directory
+                            that
+                            contains your code. In this way,
+                            it acts as a landing page for the directory.
+                        <li>setup.py :- It is a python file, the presence of which is an indication that the
+                            module/package
+                            you
+                            are about to install has likely been packaged and
+                            distributed with Distutils, which is the standard for distributing Python Modules.
+                        <li>
+                            heroku.yml:-we can add a file as our webhost. here, heroku is my webhost. I can mention in
+                            this
+                            file
+                            docker container and a web for realising an image.
+                        </li>
+                    </ul>
+                    <div id="margin" class="tab4">Project flask \ >> ‘app’(Root folder)\ >> simple pages\ >> templates\
+                    </div>
+                    <ul style="list-style-type:circle;">
+                        <li> This is where I store my html templates i.e. index.html, layout.html
+                        <li> page.html :- ‘page’ is a name of html file. we can give any name to this html file with
+                            .html
+                            extension. This files writes the content of web in respect
+                            with html syntax.
+                        </li>
+                    </ul>
+                    <div id="margin" class="tab4">Project flask \ >> ‘app’(Root folder)\ >> static\
+                    </div>
+                    <ul style="list-style-type:circle;">
+                        <li>style.css: it helps to give a style to html file.
+                        <li>image.png: we can put images for our project that we need in our web.
+                        <li>scripts.js: it has java-script and helps to manipulate the code regarding our web content.
+                        </li>
+                    </ul>
+                    <div id="margin" class="tab4">Project flask \ >> ‘app’(Root folder)\ >> templates
+                    </div>
+                    <ul style="list-style-type:circle;">
+                        <li>I can store base html file also here as base.html where i can create by base structure of
+                            webpage.
+                        <li>run.py :- contains the actual python code that will import the app and start the development
+                            server.
+                        <li>__init__.py :- initializes your application creating a Flask app instance.
+                        </li>
+                    </ul>
+                    <div id="margin" class="tab4">
+                        Project flask \ >> test (Root folder)\
+                    </div>
+                    <ul style="list-style-type:circle;">
+                        <li>This folder,we can add pytest files here. we can add as additional files according to
+                            requirement and remove pytest files.
+                        </li>
+                    </ul>
+                    <div id="margin" class="tab4">
+                        Project flask \ >> .github (Root folder)\ >> workflows\
+                    </div>
+                    <ul style="list-style-type:circle;">
+                        <li>This folder helps to give a direction of workflow to GitHub account
+                        <li>test.yml:- It is to create configuration files. For instance, it gives a docker image,
+                            account
+                            ,host
+                            website and our account information connecting to GitHub repository.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul style="list-style-type:circle;">
-                <li>docker-compose.yml :- Orchestration file that contains the configuration to develop locally, it
-                    overrides the Dockerfile to run the flask development
-                    server instead of running the gunicorn server that is used for hosting on Heroku
-                <li>Dockerfile:- File used to create an image to run in a container that runs the program
-                <li>readme.md :- It is likely the first file a reader encounters when they browse a directory that
-                    contains your code. In this way,
-                    it acts as a landing page for the directory.
-                <li>setup.py :- It is a python file, the presence of which is an indication that the module/package you
-                    are about to install has likely been packaged and
-                    distributed with Distutils, which is the standard for distributing Python Modules.
-                <li>
-                heroku.yml:-we can add a file as our webhost. here, heroku is my webhost. I can mention in this file
-                docker container and a web for realising an image.
-                </li>
-            </ul>
-            <div id="margin" class="tab4">Project flask \ >> ‘app’(Root folder)\ >> simple pages\ >> templates\
-            </div>
-            <ul style="list-style-type:circle;">
-                <li> This is where I store my html templates i.e. index.html, layout.html
-                <li> page.html :- ‘page’ is a name of html file. we can give any name to this html file with .html
-                    extension. This files writes the content of web in respect
-                    with html syntax.
-                </li>
-            </ul>
-            <div id="margin" class="tab4">Project flask \ >> ‘app’(Root folder)\ >> static\
-            </div>
-            <ul style="list-style-type:circle;">
-                <li>style.css: it helps to give a style to html file.
-                <li>image.png: we can put images for our project that we need in our web.
-                <li>scripts.js: it has java-script and helps to manipulate the code regarding our web content.
-                </li>
-            </ul>
-            <div id="margin" class="tab4">Project flask \ >> ‘app’(Root folder)\ >> templates
-            </div>
-            <ul style="list-style-type:circle;">
-                <li>I can store base html file also here as base.html where i can create by base structure of webpage.
-                <li>run.py :- contains the actual python code that will import the app and start the development server.
-                <li>__init__.py :- initializes your application creating a Flask app instance.
-                </li>
-            </ul>
-            <div id="margin" class="tab4">
-                Project flask \ >> test (Root folder)\
-            </div>
-            <ul style="list-style-type:circle;">
-                <li>This folder,we can add pytest files here. we can add as additional files according to requirement and remove pytest files.
-                </li>
-            </ul>
-            <div id="margin" class="tab4">
-                Project flask \ >> .github (Root folder)\ >> workflows\
-            </div>
-            <ul style="list-style-type:circle;">
-                <li>This folder helps to give a direction of workflow to GitHub account
-                <li>test.yml:- It is to create configuration files. For instance, it gives a docker image, account ,host
-                    website and our account information connecting to GitHub repository.
-                </li>
-            </ul>
+
 
         </div>
 
 
     </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-
-
-    </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% endblock %}
+</body>
+</html>
