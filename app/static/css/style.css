@@ -16,6 +16,10 @@ font-size: 150%;
  margin-left: 1em;
 }
 
+.tab5 {
+ margin-left: 0.5em;
+}
+
 .tab2 {
  margin-left: 1.5em;
 }
@@ -31,3 +35,25 @@ font-size: 150%;
   margin-top: 1em !important;
 }
 
+.column_color{
+ background-color: #f6f6f6;
+background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+
+.Menubar_color{
+background-color: #c3cbdc;
+background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+.myweb_font_color{
+    color: darkslateblue;
+}
+.card_color {
+   background-color: #e3efe8;
+background-image: linear-gradient(315deg, #e3efe8 0%, #96a7cf 74%);
+}
