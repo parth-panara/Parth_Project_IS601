@@ -1,137 +1,212 @@
-{% extends "base.html" %}
-{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <h6><span style="float:right">Page 4</span></h6>
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-              crossorigin="anonymous">
-        {% block head %}
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+        <title>Parth_IS601</title>
+    {% endblock %}
+</head>
+<body>
 
-            <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
-        {% endblock %}
-    </head>
-    <div class="container">
-        <header class="mt-12">
+
+
+<div class="container">
+    <div id="menubar" class="Menubar_color">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-4 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+                <div id="heading" class="p1 tab5 myweb_font_color">
+                    <h2><strong>
+                        <span class="fs-4" style="font-size: 400px;">My Website</span></strong></h2>
+                </div>
+            </a>
             <div id="heading" class="p1">
-                <h2><strong>Continuous Integration and Deployment</strong></h2>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+                </ul>
             </div>
         </header>
-
-        <div id="heading" class="p1">
-            <br>
-            <h3>Github actions: </h3>
-        </div>
-        <div id="paragraph" class="paraFont p1">
-            <P>Automate, customize, and execute your software development workflows right in your repository with GitHub
-                Actions. We can
-                discover, create, and share actions to perform any job we'd like, including CI/CD, and combine actions
-                in a completely customized workflow.
-            </P>
-            <div id="heading" class="p1">
-                <br>
-                <h3>Project setup for GitHub actions: </h3>
-            </div>
-            <P>Step 1: Under my repository name, click Pull requests.</P>
-            <P>Step 2: In the list of pull requests, click the pull request you'd like to review.</P>
-            <P>Step 3: On the pull request, click +/- Files changed.</P>
-            <P>Step 4: Review the changes in the pull request, and optionally, comment on specific lines.</P>
-            <P>Step 5: Above the changed code, click Review changes.</P>
-            <P>Step 6: Type a comment summarizing your feedback on the proposed changes.</P>
-            <P>Step 7: Select Approve to approve merging the changes proposed in the pull request.</P>
-            <P>Step 8: Click Submit review.</P>
-            <div id="heading" class="p1">
-                <br>
-                <h3>Deploy master to a production server: </h3>
-            </div>
-            <h4>Prerequisite</h4>
-            1. I am assuming one master branch as a default branch in my GitHub repository to explain this project.
-            <br>2. Here, I use my docker software for my image and container and heroku software to deploy my web. I
-            have a credentials of
-            both accounts( username, password, email)
-
-            <p><h4>The steps in the process are as follows:</h4>
-            <p> Step 1:
-                I create a .yml file in my project. I use pycharm software to do it. ‘.yml’ file contains a code of
-                configure settings
-                for my docker, GitHub and heroku platform. it draws the path of CI/CD test for code and successful
-                connection with docker
-                and heroku. I referred the reference code for .yml file from my professor’s flask application.
-            </p>
-            <p>Step 2:
-                in pycharm, I can create a new branch and then i can edit, add, and delete the code according to
-                requirement for my
-                application work. For Instance, I give a branch name ‘testingCI/CD’ .(In this case my main/ master
-                branch in PyCharm
-                would remain without interruption)</p>
-
-            <p>Step 3:
-                I push that new branch with adding a commit ‘Updated and testing CI/CD’ through the commit process to
-                GitHub.
-            </p><p>
-            Step 4. Now, I make sure that I have two branches in my GitHub repository. one is ‘master’ named and another
-            one is
-            ‘testing CI/CD’. </p>
-            <p>
-                Step 5: I add my docker and heroku app credentials in my secret option of Action tab of GitHub
-                repository. (Note: This credentials
-                coordinates with my project’s ‘yml. ’ file configuration)
-            </p>
-            <p>
-                Step 6: With the help of above steps, I have set an automated deployment process for my work. Now, I
-                merge my ‘testingCI/CD’
-                branch to the master branch. To do it, I select a pull request option in my GitHub repository to merge
-                the branches.
-                In this process, GitHub works in three steps like test, built docker container , and deploy heroku.
-                After successful
-                completion of these three steps I get my updated master branch.
-            </p>
-            <p>
-
-                Step 7: On completion of step-6, my master branch is now connected with the heroku app server. Heroku
-                application is ready
-                to host my webapp/webpage with the help of master branch of GitHub. Thus, I get a successful deployment
-                of my master
-                branch to the production server.
-            </p>
-            <div id="heading" class="p1">
-                <br>
-                <h3>Deploy an image of my project to Dockerhub when master is updated: </h3>
-            </div>
-Elaborating the step 6, I create a docker repository at doker hub in my account before merging the branches,
-This created repository/ image name I add in my .yml file of project. Now I can successfully merge the two branches according to
-above-mentioned steps.
-
-
-
-
-        </div>
     </div>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <div class="row">
+        <div class="col-8">
+            <header class="mt-12">
+                <div id="heading" class="p1">
+                    <h2><strong>Continuous Integration and Deployment</strong></h2>
+                </div>
+            </header>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+            <div id="heading" class="p1">
+                <br>
+                <h3>GitHub actions: </h3>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <P>Automate, customize, and execute your software development workflows right in your repository with
+                    GitHub
+                    Actions. We can
+                    discover, create, and share actions to perform any job we'd like, including CI/CD, and combine
+                    actions
+                    in a completely customized workflow.
+                </P>
+
+                <div style="width:610px;height:370px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 600px;">
+                            <img src="https://raw.githubusercontent.com/GokuMohandas/MadeWithML/main/images/mlops/cicd/workflows.png"
+                                 class="d-block w-100" style="vertical-align:middle"><br>
+                            <h6 style="text-align:center">image(a) Diagram of the GitHub actions</h6></div>
+                    </div>
+                </div>
+
+                <br>
 
 
-    </html>
+                <div id="heading" class="p1">
+                    <br>
+                    <h3>Project setup for GitHub actions: </h3>
+                </div>
+                <P>Step 1: Under my repository name, click Pull requests.</P>
+                <P>Step 2: In the list of pull requests, click the pull request you would like to review.</P>
+                <P>Step 3: On the pull request, click +/- Files changed.</P>
+                <P>Step 4: Review the changes in the pull request, and optionally, comment on specific lines.</P>
+                <P>Step 5: Above the changed code, click Review changes.</P>
+                <P>Step 6: Type a comment summarizing your feedback on the proposed changes.</P>
+                <P>Step 7: Select Approve to approve merging the changes proposed in the pull request.</P>
+                <P>Step 8: Click Submit review.</P>
+                <div id="heading" class="p1">
+                    <br>
+                    <h3>Deploy master to a production server: </h3>
+                </div>
+                <h4>Prerequisite</h4>
+                1. I am assuming one master branch as a default branch in my GitHub repository to explain this project.
+                <br>2. Here, I use my docker software for my image and container and heroku software to deploy my web. I
+                have a credentials of
+                both accounts( username, password, email)
 
-{% endblock %}
+                <p><h4>The steps in the process are as follows:</h4>
+                <p> Step 1:
+                    I create a .yml file in my project. I use pycharm software to do it. ‘.yml’ file contains a code of
+                    configure settings
+                    for my docker, GitHub and heroku platform. it draws the path of CI/CD test for code and successful
+                    connection with docker
+                    and heroku. I referred the reference code for .yml file from my professor’s flask application.
+                </p>
+                <p>Step 2:
+                    in pycharm, I can create a new branch and then i can edit, add, and delete the code according to
+                    requirement for my
+                    application work. For Instance, I give a branch name ‘testingCI/CD’ .(In this case my main/ master
+                    branch in PyCharm
+                    would remain without interruption)</p>
+
+                <p>Step 3:
+                    I push that new branch with adding a commit ‘Updated and testing CI/CD’ through the commit process
+                    to
+                    GitHub.
+                </p>
+                <p>
+                    Step 4. Now, I make sure that I have two branches in my GitHub repository. one is ‘master’ named and
+                    another
+                    one is
+                    ‘testing CI/CD’. </p>
+                <p>
+                    Step 5: I add my docker and heroku app credentials in my secret option of Action tab of GitHub
+                    repository. (Note: This credentials
+                    coordinates with my project’s ‘yml. ’ file configuration)
+                </p>
+                <p>
+                    Step 6: With the help of above steps, I have set an automated deployment process for my work. Now, I
+                    merge my ‘testingCI/CD’
+                    branch to the master branch. To do it, I select a pull request option in my GitHub repository to
+                    merge
+                    the branches.
+                    In this process, GitHub works in three steps like test, built docker container , and deploy heroku.
+                    After successful
+                    completion of these three steps I get my updated master branch.
+                </p>
+                <p>
+                    Step 7: On completion of step-6, my master branch is now connected with the heroku app server.
+                    Heroku
+                    application is ready
+                    to host my webapp/webpage with the help of master branch of GitHub. Thus, I get a successful
+                    deployment
+                    of my master
+                    branch to the production server.
+                </p>
+                <div id="heading" class="p1">
+                    <br>
+                    <h3>Deploy an image of my project to Dockerhub when master is updated: </h3>
+                </div>
+                Elaborating the step 6, I create a docker repository at doker hub in my account before merging the
+                branches,
+                This created repository/ image name I add in my .yml file of project. Now I can successfully merge the
+                two
+                branches according to
+                above-mentioned steps.
+            </div>
+        </div>
+
+
+
+        <div class="col">
+            <br>
+            <br>
+            <br>
+            <div class="paraFont p1">
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 400px;">
+                    <a href="https://docs.github.com/en/actions"><img
+                            src="https://miro.medium.com/proxy/1*-eHRhJcg-QPUws99xEDh6w.png"
+                            class="d-block w-100" alt="..."></a><br>
+                    <h6>Click on the image to visit GitHub actions on official site!</h6></div>
+                <hr>
+            </div>
+
+
+            <div style="width:410px;height:240px;border:3px solid #c2d4dd;">
+                <div class="paraFont p1">
+                    <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 380px;">
+                        <img src="https://docs.microsoft.com/en-us/azure/app-service/media/app-service-deploy-best-practices/slot_flow_code_diagam.png"
+                             class="d-block w-100" alt="..."><br>
+                        <h6 style="text-align:center">image(b) Deploy master to a production server diagram</h6></div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+</html>
