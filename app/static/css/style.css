@@ -7,7 +7,9 @@ font-size: 150%;
 .secondparafont{
     font-size: 100%;
 }
-
+.Web_link_Font{
+    font-size: 50%;
+}
 .p1 {
   font-family: "Times New Roman", Times, serif;
 }
@@ -30,9 +32,16 @@ font-size: 150%;
 .tab4 {
  margin-left: 0.7em;
 }
+.tab_right{
+    margin-right: 0.5em;
+}
+
 
 .mt-0 {
   margin-top: 1em !important;
+}
+.mt-2 {
+  margin-top: 0.5em !important;
 }
 
 .column_color{
@@ -64,4 +73,8 @@ background-image: linear-gradient(315deg, #e3efe8 0%, #96a7cf 74%);
 
 .ms-1 {
   margin-top: 3px;
+}
+
+.img {
+    filter: drop-shadow(4px 4px 4px #C8C8C8);
 }

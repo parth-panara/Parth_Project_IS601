@@ -1,10 +1,571 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>Parth_IS601</title>
+    {% endblock %}
 </head>
 <body>
+<div class="container">
+    <div id="menubar" class="Menubar_color">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-4 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+                <div id="heading" class="p1 tab5 myweb_font_color">
+                    <h2><strong>
+                        <span class="fs-4" style="font-size: 400px;">My Website</span></strong></h2>
+                </div>
+            </a>
+            <div id="heading" class="p1">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+                </ul>
+            </div>
+        </header>
+
+    </div>
+
+
+    <div class="paraFont p1 img">
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 1296px;">
+            <img src="{{ url_for('static', filename='images/terms page pics/terms1.jpg') }}"
+                 class="d-block w-100" style="vertical-align:middle" alt="..."><br>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-8">
+
+            <div id="heading" class="p1">
+                <br>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms//"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/">Link to the reference!</a></span>
+                </div>
+                <h3><strong>Class</strong></h3>
+            </div>
+            <hr>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    Class is a blueprint or a set of instructions to build a specific type of object. It is an
+                    Object-Oriented Programming idea that
+                    revolves around real-life entities. A class defines how an object will act and what it will include.
+                    for example, if a programmer
+                    wanted to make three instances of Car , maybe a BMW, a Ferrari, and a Ford instance. For example, in
+                    python the class syntax can be..
+                    (class named MyClass, with a property named x) e.g.
+                    <br> class MyClass:
+                    <br> x = 5
+                </p>
+            </div>
+
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Object</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    A class instance can be declared as an object, and a program can include numerous instances of the
+                    same class. One of
+                    the Java OOPs principles is the Object, which holds both data and a function that operates on the
+                    data. For instance, a chair, a bike,
+                    a marker, a pen, a table, a car, and so on.
+                </p>
+            </div>
+
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Instantiation</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    The construction of a real-life instance or particular realization of an abstraction or template,
+                    such as a
+                    class of objects or a computer process, is known as instantiation in programming. To instantiate is
+                    to make such an instance by
+                    specifying a specific variation of an object within a class, giving it a name, and putting it in a
+                    physical location, for example.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Namespace</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    A namespace is a declarative zone that gives the identifiers (names of types, functions, variables,
+                    and so on) within
+                    it a scope. Namespaces are used to arrange code into logical categories and to avoid name clashes,
+                    which might happen when
+                    you have many libraries in your code base.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Constructor</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    In object-oriented programming, a constructor is a particular method of a class or structure that
+                    initializes a newly
+                    formed object of that kind. The constructor is automatically invoked whenever an object is created.
+                    A constructor is similar to an instance method in that it can be used to set the values of an
+                    object's members to default or user-defined
+                    values. It normally has the same name as the class.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Fixture</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    The objective of a test fixture is to ensure that tests are run in a consistent and well-known
+                    environment, resulting in
+                    reproducible results. This is referred to as the test context by some. Fixtures that are examples
+                    include:
+                <ul style="list-style-type:circle;">
+                    <li>Erasing a hard disk and installing a known clean operating system installation</li>
+                    <li>Loading a database with a specific, known set of data</li>
+                    <li>Copying a group of files that are well-known.</li>
+                    <li>Set-up/creation of fake or mock objects, as well as preparation of incoming data</li>
+
+                </ul>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Type hint</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    Type hinting is a formal solution to statically indicate the type of a value within our Python code.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Type cast</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    Typecasting, or type conversion, is a method of changing an entity from one data type to another. It
+                    is used in computer
+                    programming to ensure variables are correctly processed by a function. An example of typecasting is
+                    converting an integer to a
+                    string.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Unit test</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    In object-oriented programming, a unit is often an entire interface, such as a class, but could be
+                    an individual method.
+                    Unit tests are typically written and run by software developers to ensure that code meets its design
+                    and behaves as intended.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Static</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    Static variables are the variables that belong to the class and not to objects. Class or Static
+                    variables are shared amongst
+                    objects of the class. All variables which are assigned a value in the class declaration are class/
+                    static variables.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Instance method</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    In Python object-oriented programming, when we design a class, we use the instance methods and class
+                    methods.
+                    The object state can be accessed or modified using this method. When we use instance variables in a
+                    method, we call it an instance
+                    method. To refer to the current object, it must have a self parameter.
+                </p>
+            </div>
+
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Instance property</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    An individual object of a certain class. An object obj that belongs to a class Employee, for
+                    example,
+                    is an instance of the class Employee. To create instances of a class, you call the class using class
+                    name and pass
+                    in whatever arguments its __init__ method accepts.
+                </p>
+            </div>
+
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Static method and property</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    In Python object-oriented programming, when we design a class, we use the instance methods and class
+                    methods.
+                    The object state can be accessed or modified using this method. When we use instance variables in a
+                    method, we call it an instance
+                    method. To refer to the current object, it must have a self parameter.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Abstraction</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    The process of defining classes by simplifying reality, ignoring extraneous details, and focusing on
+                    what
+                    is important for a purpose. For example, a customer may have a name, title, address, marital status,
+                    pets, children, credit
+                    card information, vehicles, etc. But if the purpose of the application is to process orders, the
+                    application may only care about
+                    the customer’s name, address, and credit card information.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Encapsulation</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    A way to hide (or encapsulate) the data and implementation details within a class, thus hiding
+                    complexity.
+                    In C#, data elements are defined with private backing fields and exposed through property getters
+                    and setters. So the data
+                    is encapsulated.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Inheritance</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    A relationship between classes whereby child (or derived) classes inherit all of the members of the
+                    parent
+                    (or base) class. For example, an application may define a “business object base” class that all
+                    business objects inherit
+                    from. This base class can contain members common to all child classes, such as entity state
+                    information.
+                </p>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h3><strong>Polymorphism</strong></h3>
+                <hr>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    Basically “many forms”. The concept that a single method can behave differently depending
+                    on the type of object that calls it. For example, the Validate method in Customer class performs
+                    differently from the
+                    Validate method in the Order class.
+                </p>
+            </div>
+
+
+            <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                    href="https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://blogs.msmvps.com/deborahk/object-oriented-programming-oop-terms/">Link to the reference!</a></span>
+            </div>
+        </div>
+
+        <div class="col">
+            <br>
+
+            <div style="width:416px;height:290px;border:3px solid #c2d4dd;">
+                <div class="paraFont p1">
+                    <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 398px;">
+                        <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1459496/programming-clipart-md.png"
+                             class="d-block w-100" alt="..."><br>
+                        <h6 style="text-align:center">It's all about programming!</h6></div>
+                </div>
+            </div>
+
+            <br>
+
+            <div style="width:416px;height:1840px;border:3px solid #c2d4dd;">
+                <div id="margin" class="tab5 tab_right">
+                    <div id="heading" class="p1">
+                        <br>
+                        <h3><strong>Overview of SOLID</strong></h3>
+                        <hr>
+                    </div>
+                    <div id="paragraph" class="paraFont p1">
+                        <p>
+                            SOLID is an acronym for five principles that help software developers design maintainable
+                            and
+                            extendable
+                            classes. It stands for Single responsibility, Open-closed, Liskov substitution, Interface
+                            segregation and Dependency inversion.
+                        </p>
+
+
+                        <div id="heading" class="p1">
+                            <br>
+                            <h4>Single responsibility Principle</h4>
+                        </div>
+                        <div id="paragraph" class="paraFont p1">
+                            <p>
+                            <ul style="list-style-type:circle;">
+                                <li>Makes code more robust because of less side effects</li>
+                                <li>Each class is responsible for one thing.</li>
+                                <li>If we change anything in that one class, it would affect only one behavior of the
+                                    software.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="heading" class="p1">
+                            <br>
+                            <h4>Open/closed Principle</h4>
+                        </div>
+                        <div id="paragraph" class="paraFont p1">
+                            <p>
+                            <ul style="list-style-type:circle;">
+                                <li>Any derived class should be able to substitute its parent class without breaking the
+                                    application.
+                                </li>
+                                <li>Every class that implements an interface must be able to substitute any reference
+                                    throughout
+                                    the code that implements that same interface.
+                                </li>
+                                <li>Every part of the code should get the expected result, no matter what instance of a
+                                    class
+                                    you send to it, given it
+                                    implements the same interface.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="heading" class="p1">
+                            <br>
+                            <h4>Liskov Substitution Principle</h4>
+                        </div>
+                        <div id="paragraph" class="paraFont p1">
+                            <p>
+                            <ul style="list-style-type:circle;">
+                                <li>If class A is a subtype of class B, then we should be able to replace B with A
+                                    without
+                                    disrupting the
+                                    behaviour of our program.
+                                </li>
+                                <li>Any derived class should be able to substitute its parent class without breaking the
+                                    application.
+                                </li>
+                                <li>Every class that implements an interface must be able to substitute any reference
+                                    throughout
+                                    the
+                                    code that implements that same interface.
+                                </li>
+                                <li>Every part of the code should get the expected result, no matter what instance of a
+                                    class
+                                    you send to it,
+                                    given it implements the same interface.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="heading" class="p1">
+                            <br>
+                            <h4>Dependency Inversion Principle</h4>
+                        </div>
+                        <div id="paragraph" class="paraFont p1">
+                            <p>
+                            <ul style="list-style-type:circle;">
+                                <li>Never depend on anything concrete, only depend on abstractions. Decouple the
+                                    high-level
+                                    from
+                                    the low-level.
+                                </li>
+                                <li>You should be able to change an implementation easily without altering high level
+                                    code.
+                                </li>
+                                <li>Note : High-level modules, which provide complex logic, should be easily reusable
+                                    and
+                                    unaffected
+                                    by changes in low-level modules
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="heading" class="p1">
+                            <br>
+                            <h4>Interface Segregation Principle</h4>
+                        </div>
+                        <div id="paragraph" class="paraFont p1">
+                            <p>
+                            <ul style="list-style-type:circle;">
+                                <li>High-level modules should not depend on low-level modules. Both should depend on
+                                    abstractions.
+                                </li>
+                                <li>Never depend on anything concrete, only depend on abstractions. Decouple the
+                                    high-level
+                                    from
+                                    the low-level.
+                                </li>
+                                <li>We should be able to change an implementation easily without altering high level
+                                    code.
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                            href="https://towardsdatascience.com/5-principles-to-write-solid-code-examples-in-python-9062272e6bdc"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a
+                            href="https://towardsdatascience.com/5-principles-to-write-solid-code-examples-in-python-9062272e6bdc">Link to the reference!</a></span>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <div style="width:416px;height:650px;border:3px solid #c2d4dd;">
+                <div id="margin" class="tab5 tab_right">
+                    <div id="heading" class="p1">
+                        <br>
+                        <h3><strong>Overview of Design Patterns</strong></h3>
+                        <hr>
+                    </div>
+                    <div id="paragraph" class="paraFont p1">
+                        <p>
+                            It presents a generic, repeatable answer to a problem that arises frequently in software
+                            development.
+                            The most important aspect of software engineering.
+                        </p>
+                        <p>
+                        <ul style="list-style-type:circle;">
+                            <li>Creation ability: Inheritance aids in making code reusable, allowing us to reuse or
+                                create it across
+                                many projects.
+                            </li>
+                            <li>Behaviour: Design patterns improve the efficiency of designer
+                                communication.
+                            </li>
+                            <li>Transparent: It increases the code's transparency for all developers who will use it in
+                                the future.
+                            </li>
+                            <li> Structural: The use of design patterns aids in the creation of highly
+                                cohesive modules with minimal coupling.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="heading" class="p1 Web_link_Font"><span style="float:right"><a
+                            href="https://blog.devgenius.io/software-design-patterns-1b41de14ab8b"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://blog.devgenius.io/software-design-patterns-1b41de14ab8b">Link to the reference!</a></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
 </body>
 </html>
