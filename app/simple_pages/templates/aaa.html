@@ -1,10 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>Parth_IS601</title>
+    {% endblock %}
 </head>
 <body>
+<div class="container">
+    <div id="menubar" class="Menubar_color">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-4 mb-md-0 me-md-auto text-dark text-decoration-none">
 
+                <div id="heading" class="p1 tab5 myweb_font_color">
+                    <h2><strong>
+                        <span class="fs-4" style="font-size: 400px;">My Website</span></strong></h2>
+                </div>
+            </a>
+            <div id="heading" class="p1">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/aaa">AAA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+                </ul>
+            </div>
+        </header>
+
+    </div>
+
+    <div class="paraFont p1 img">
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 1296px;">
+            <img src="/static/images/aaa page pics/aaa cover pic.jpg"
+                 style="width:100%" alt=""><br>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-8">
+
+            <div id="heading" class="p1">
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    A test is a procedure that exercises a behavior to determine if the behavior functions correctly.
+                <p>For test, there is a simple and powerful pattern has been set up that known as a : <strong>Arrange-Act-Assert</strong>
+
+
+                <h3><strong>Arrange</strong></h3>
+                <hr>
+                It means prepare inputs, targets all the operations like need of object, log in web etc.
+                <br>
+                <br>
+                <h3><strong>Act</strong></h3>
+                <hr>
+                Execution is being taken into the programming code syntax. For Instance, it could be for function,
+                method, web page.
+                <br>
+                <br>
+                <h3><strong>Assert</strong></h3>
+                <hr>
+                It means to add the result that we expect as outcome from program. So we can verify/ test the response
+                from it. By doing
+                assertions, we can check string or numeric values.
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <h3><strong>Calculator Tutorial demonstrates AAA testing</strong></h3>
+                <hr>
+
+
+                We need a python test file to explain it. I am selecting a calculation_test.py file from my calculator
+                program. please, follow steps number from 1 to 3 on right side of image.
+
+
+                <div style="width:810px;height:1259px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 800px;">
+                            <img src="/static/images/aaa page pics/test.jpg"
+                                 style="width:100%" alt="">
+                            <br>
+                            <h6 style="text-align:center">image(a) Calculations_test.py file from calculator program
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="col">
+            <div style="width:416px;height:730px;border:3px solid #c2d4dd;">
+                <div id="margin" class="tab5 tab_right">
+                    <div id="heading" class="p1">
+                        <br>
+                        <h3><strong>Why is testing important?</strong></h3>
+                        <hr>
+                    </div>
+                    <div id="paragraph" class="paraFont p1">
+                        <ul style="list-style-type:circle;">
+                            <P>
+                            <li>
+                                As well as other sorts of testing,AAA testing is critical to ensuring that our
+                                software is up and operating without any
+                                problems.
+                            </li>
+                            <li>
+                                The major purpose of unit testing is to find bugs and other inconsistencies in the
+                                application while it is still in
+                                development so that these issues can be caught before the software is released into
+                                production.
+                            </li>
+
+                            <li>The positive side of AAA testing is to concentrate each test on a particular activity.
+                                It distinguishes between the configuration
+                                of the System Under Test and the assertions made on it after the activity.
+                            </li>
+                            <li>The second thing is that it is well-organized and
+                                tidy, which helps to unify and explain the structure of tests, making them easier to
+                                comprehend and manage.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="heading" class="p1">
+                <h4>Step 1: Arrange</h4>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <ul style="list-style-type:circle;">
+                    <li>
+
+                        I am arranging a test which I called test_calculation_divide_get_result_method().
+                    </li>
+                    <li> Here, In line 54 I am creating a condition for my test. The condition is <strong>tuple_list =
+                        (1,2)</strong></li>
+
+                </ul>
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <h4>Step 2: Act</h4>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <ul style="list-style-type:circle;">
+                    <li>
+                        After setting up the condition, we will generate a division action as a method to call a tuple
+                        list and store its value in the variable
+                        calculation. see line number 55 of image.
+                    </li>
+
+                    <li><strong>calculation = Division.create(tuple_list)</strong></li>
+                </ul>
+            </div>
+            <br>
+            <div id="heading" class="p1">
+
+                <h4>Step 3: Assert</h4>
+            </div>
+            <div id="paragraph" class="paraFont p1">
+                <ul style="list-style-type:circle;">
+                    <li>
+
+                        In step 3, we will look for a result of step 1 and step2. So, to verify step 1 and step2 in
+                        regard to calculation object will play the
+                        inheritance principle.
+                    </li>
+                    <li>Now, invoking get_result() we will get a return result according to task as a string, float or
+                        integer.
+                    </li>
+                    <li><strong>assert calculation.get_result() == 0 </strong> Here, I have assumed the result as 0 of
+                        that division calculation's truple value.
+                    </li>
+                </ul>
+
+                <br>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a
+                        href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">Link to the reference!</a></span>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
