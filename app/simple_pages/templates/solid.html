@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>Parth_IS601</title>
+    {% endblock %}
+</head>
+<body>
+<div class="container">
+    <div id="menubar" class="Menubar_color">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-4 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+                <div id="heading" class="p1 tab5 myweb_font_color">
+                    <h2><strong>
+                        <span class="fs-4" style="font-size: 400px;">My Website</span></strong></h2>
+                </div>
+            </a>
+            <div id="heading" class="p1">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/oops">OOPS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/solid">SOLID</a></li>
+                </ul>
+            </div>
+        </header>
+
+    </div>
+    <div class="paraFont p1 img">
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 1296px;">
+            <img src="/static/images/solid pics/solid cover pic.jpg"
+                 style="width:100%" alt=""><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <br>
+
+
+            <div id="paragraph" class="paraFont p1">
+                <p>The solid principles improve the reliability of our code by working on its structure and its logical
+                    consistency.</p>
+                <p>
+                    The SOLID principles are:
+                <ul style="list-style-type:circle;">
+                    <li>The Single-Responsibility Principle (SRP)</li>
+                    <li>The Open-Closed Principle (OCP)</li>
+                    <li>The Liskov Substitution Principle (LSP)</li>
+                    <li>The Interface Segregation Principle (ISP)</li>
+                    <li>The Dependency inversion Principle (DIP)</li>
+                </ul>
+                </p>
+
+                <br>
+
+                <p>
+                <h3><strong>Single-Responsibility Principle</strong></h3>
+                <hr>
+                <p>
+                    It means a class should have only one reason to change.
+                </p>
+                <p>
+                    There are subclasses Addition(), Subtraction(), Multiplication(), Division() of base class
+                    Calculator as shown in image() which
+                    demonstrates Single-Responsibility Principle.
+                </p>
+                <div style="width:510px;height:510px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 400px;">
+                            <img src="/static/images/oops page pics/calculator class-inheritance.jpg"
+                                 style="width:125%" alt="">
+                            <br>
+                            <h6 style="text-align:center">image(a) Calculator program demonstrates
+                                Inheritance</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p>
+                    For instance, Division class has one function called divide() on line 52 of image(a). This function
+                    returns the
+                    result of that function. So it has
+                    only one task to return a result. Thus, if we change anything in this function, it would not affect
+                    on entire software behaviour. It will
+                    only affect this class method.
+                </p>
+                <p>
+                    In this above image of the calculator program has four methods namely add, subtract, multiply,
+                    division.
+                </p>
+                <h3><strong>Open-Closed Principle</strong></h3>
+                <hr>
+                <p>
+                    It means that the software entities should be open for extension but closed for modification.
+                </p>
+                <p>
+                    As discussed the earlier the subclasses Addition(), Subtraction(), Multiplication(), Division()
+                    inherit the property of class Calculation.
+                </p>
+
+                <div style="width:510px;height:810px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 500px;">
+                            <img src="/static/images/oops page pics/sub class-inheritance.jpg"
+                                 style="width:100%" alt="">
+                            <br>
+                            <h6 style="text-align:center">image(b) Calculations_test.py file of calculator program
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>As shown in image(b) of calculator program, we can see the subclasses inherited the tuple list data
+                    from calculation class. Now, they are extending the new process as
+                    described in the image (For instance, line number 38,39 and 40).
+                </p>
+
+                <h3><strong>Liskov Substitution Principle</strong></h3>
+                <hr>
+                <p>
+                    It means that Functions that use pointers or references to base classes must be able to use objects
+                    of derived classes without
+                    knowing it.
+                </p>
+                <div style="width:502px;height:325px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 492px;">
+                            <img src="/static/images/oops page pics/encapsulation.jpg"
+                                 style="width:100%" alt=""><br>
+                            <h6 style="text-align:center">image(c) Calculator program demonstrates Encapsulation</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <p>
+                    According to the Inheritance principle, when subclasses Addition(), Subtraction(), Multiplication(),
+                    Division() inherit the property of
+                    base classes, we would not be able to change parent class. We have to re-write it. But in Liskov
+                    Substitution principle, we can
+                    duplicate the parent class in subclasses and able to write modifications into child classes
+                    directly.
+                </p>
+
+
+                <h3><strong>Interface Segregation Principle</strong></h3>
+                <hr>
+                <p>
+                    “Many client-specific interfaces are better than one general-purpose interface”
+                </p>
+                <p>
+                    In the contest of classes, an interface is considered, all the methods and properties “exposed”,
+                    thus, everything that a user can
+                    interact with that belongs to that class.
+                </p>
+
+                <div style="width:510px;height:810px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 500px;">
+                            <img src="/static/images/oops page pics/sub class-inheritance.jpg"
+                                 style="width:100%" alt="">
+                            <br>
+                            <h6 style="text-align:center">image(d) Calculations_test.py file of calculator program
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p>
+                    According to image(d), There are two abstract methods create() and convert_args_to_tuple_of_float()
+                    have been
+                    used in class Calculator. Interface
+                    is a one type of class, but it has only sign method body. So here, class calculator contains smaller
+                    interfaces(signed method body).
+                </p>
+                <p>
+                    Now as per inheritance principle, the subclasses Addition(), Subtraction(), Multiplication(),
+                    Division() will have that interface property.
+                    subclasses will segregate this interface and each subclass will use it that interface methods.
+                </p>
+
+                <h3><strong>Dependency Inversion Principle</strong></h3>
+                <hr>
+                <p>
+                    It means that Abstractions should not depend on details. Details should depend on abstraction.
+                    High-level modules should
+                    not depend on low-level modules. Both should depend on abstractions.
+                </p>
+                <div style="width:510px;height:810px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 500px;">
+                            <img src="/static/images/oops page pics/sub class-inheritance.jpg"
+                                 style="width:100%" alt="">
+                            <br>
+                            <h6 style="text-align:center">image(e) Calculations_test.py file of calculator program
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p>
+                    In calculator program, the subclasses Addition(), Subtraction(), Multiplication(), Division() are
+                    depended upon the parent class Calculator.
+                    According to the Dependency Inversion Principle the details depend on the abstractions, we can
+                    validate that with the
+                    two abstractions classes, create() and convert_args_to_tuple_of_float(). Thus. the earlier mention
+                    subclasses depend on
+                    parent class Calculator.
+                </p>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://towardsdatascience.com/solid-coding-in-python-1281392a6a94"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a
+                        href="https://towardsdatascience.com/solid-coding-in-python-1281392a6a94">Link to the reference!</a></span>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col">
+            <br>
+            <div class="paraFont p1">
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 400px;">
+                    <img src="https://www.coar-repositories.org/files/peer-review-2.jpg"
+                         class="d-block w-100" alt="..."><br>
+                    <h6 style="text-align:center">Learn about solid and design pattern!</h6></div>
+
+                <br>
+                <br>
+
+                <hr>
+
+            </div>
+
+
+            <div style="width:416px;height:1595px;border:3px solid #c2d4dd;">
+                <div id="margin" class="tab5 tab_right">
+                    <div id="heading" class="p1">
+                        <br>
+                        <h3><strong>Factory Design Pattern</strong></h3>
+                        <hr>
+                    </div>
+                    <div id="paragraph" class="paraFont p1">
+                        <ul style="list-style-type:circle;">
+                            <P>
+                            <li>
+                                It’s a design pattern of programing. It helps to solve the errors by separating
+                                the process of creating an object from the code that depends on the interface of the
+                                object.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="width:392px;height:617px;border:1px solid #000;">
+                        <div class="paraFont p1 ms-1 ">
+                            <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 407px;">
+                                <img src="/static/images/solid pics/fp2.jpg"
+                                     style="width:94%" alt="">
+                                <br>
+                                <h6 style="text-align:center">image(f) History test of calculator program
+                                </h6>
+                            </div>
+                        </div>
+
+
+                        <div id="paragraph" class="paraFont p1">
+                            <ul style="list-style-type:circle;">
+                                <P>
+                                <li>@ fixture is a decorator as mentioned in line number 7 of image(f). Passing
+                                    arguments
+                                    to a fixture is the first thing that
+                                    require to do with @fixtures when we start using them.
+                                </li>
+                                <li> In calculator program of history test, I have defined the two fixtures namely
+                                    <strong>def clear_history_fixture()</strong> and <strong>def
+                                        setup_addition_calculation_fixture()</strong> in line number 8 and 15 of image
+                                    (f).
+                                </li>
+                                <li>Now, I have created <strong>def test_add_calculation_to_history
+                                    (clear_history_fixture, setup_addition_calculation_fixture)</strong> on
+                                    line number 50. I have passed the two parameters to get a Test for clear history
+                                    returns true for success regarding the mentioned
+                                    function. This process describes the implementation of factory design pattern
+                                </li>
+                            </ul>
+                            <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                                    href="https://www.inspiredpython.com/article/five-advanced-pytest-fixture-patterns"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a
+                                    href="https://www.inspiredpython.com/article/five-advanced-pytest-fixture-patterns">Link to the reference!</a></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
