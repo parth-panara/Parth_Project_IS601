@@ -1,10 +1,298 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>Parth_IS601</title>
+    {% endblock %}
 </head>
 <body>
+<div class="container">
+    <div id="menubar" class="Menubar_color">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-4 mb-md-0 me-md-auto text-dark text-decoration-none">
+
+                <div id="heading" class="p1 tab5 myweb_font_color">
+                    <h2><strong>
+                        <span class="fs-4" style="font-size: 400px;">My Website</span></strong></h2>
+                </div>
+            </a>
+            <div id="heading" class="p1">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/git">Git</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/docker">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/python">Python/Flask</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/cicd">CI/CD</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/aaa">AAA</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/oops">OOPS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/solid">SOLID</a></li>
+                </ul>
+            </div>
+        </header>
+
+    </div>
+
+    <div class="paraFont p1 img">
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 1296px;">
+            <img src="/static/images/oops page pics/oops cover pic.jpg"
+                 style="width:100%" alt=""><br>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-8">
+
+            <div id="heading" class="p1">
+                <br>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://www.geeksforgeeks.org/encapsulation-in-python/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://www.geeksforgeeks.org/encapsulation-in-python/">Link to the reference!</a></span>
+                </div>
+                <h3><strong>Encapsulation</strong></h3>
+            </div>
+            <hr>
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    It means to protect(encapsulate) all the data and functions into class. These protected members of
+                    class are not accessible
+                    from outside the class. We can access it within a class. Below is the example of calculator project
+                    which demonstrates the encapsulation.
+                <div style="width:610px;height:395px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 600px;">
+                            <img src="/static/images/oops page pics/encapsulation.jpg"
+                                 style="width:100%" alt=""><br>
+                            <h6 style="text-align:center">image(a) Calculator program demonstrates Encapsulation</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p>
+                    In this above image of the calculator program has four methods namely add, subtract, multiply,
+                    division.
+                <p>
+                    Calculator holds the instance . For example , (line number 10 of image) addition instance store
+                    inside the calculation variable that
+                    how it’s capsule the data and functionality to perform get results calculations. Here, 'Tuple_list’
+                    contains the data.
+                    Thus, the data of 'Tuple_list’ is capsuled. This process of performs called Encapsulation.
+            </div>
+
+
+            <div id="heading" class="p1">
+                <br>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://www.geeksforgeeks.org/inheritance-in-python/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://www.geeksforgeeks.org/inheritance-in-python/">Link to the reference!</a></span>
+                </div>
+                <h3><strong>Inheritance</strong></h3>
+            </div>
+            <hr>
+
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    This principle takes place in parent class(base class) and child class(subclass).
+
+
+                <div style="width:610px;height:612px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 480px;">
+                            <img src="/static/images/oops page pics/calculator class-inheritance.jpg"
+                                 style="width:125%" alt="">
+                            <br>
+                            <h6 style="text-align:center">image(b) Calculator program demonstrates
+                                Inheritance</h6>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+                <p>
+                    In calculator program, the class Calculator called parent class. The class Addition(), class
+                    Subtraction(), class Multiplication(), and
+                    class Division() are all child classes of class Calculation() as shown in the image(b). Here, the
+                    subclasses inherit the property of its
+                    parent class. This demonstrates Inheritance.
+                <p>
+                    Calculator class has methods named convert_args_to_tuple_of_float, and creat method in
+                    respectively line number 11 and 14 of image (c). Due to
+                    having this property in base class Calculator, the all subclasses Addition(), Subtraction(),
+                    Multiplication(), and Division() are able
+                    to inherit it for its property.
+            </div>
+
+            <div id="heading" class="p1">
+                <br>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://www.geeksforgeeks.org/polymorphism-in-python/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://www.geeksforgeeks.org/polymorphism-in-python/">Link to the reference!</a></span>
+                </div>
+                <h3><strong>Polymorphism</strong></h3>
+            </div>
+            <hr>
+
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    Polymorphism means having vivid or different forms.
+
+                <p>Polymorphism refers to the ability of the function with the same name to
+                    carry different functionality altogether. It creates a structure that can use many forms of objects.
+                    Image(d) illustrates the principle
+                    of polymorphism in calculator program.
+
+                <div style="width:610px;height:395px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 600px;">
+                            <img src="/static/images/oops page pics/encapsulation.jpg"
+                                 style="width:100%" alt=""><br>
+                            <h6 style="text-align:center">image(d) Calculator program demonstrates Polymorphism</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p>
+                    In calculator program, get_result() method of line number 11, 17, 23, 29 convert on any object of
+                    method Add(), Subtract(), Multiply(), and Divide().
+                <p>
+                    So, we can call get_result() method on any class of calculation (Addition(), Subtraction(),
+                    Multiplication(), and Division() classes )
+                    and we will get a result. Thus, the overridden of get_result() method in classes present a
+                    polymorphism concept.
+
+            </div>
+
+
+            <div id="heading" class="p1">
+                <br>
+                <div id="heading" class="p1 Web_link_Font"> <span style="float:right"><a
+                        href="https://www.geeksforgeeks.org/abstract-classes-in-python/"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-link-45deg" viewBox="0 0 16 16">
+  <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
+  <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+                </svg></a><a href="https://www.geeksforgeeks.org/abstract-classes-in-python/">Link to the reference!</a></span>
+                </div>
+                <h3><strong>Abstraction</strong></h3>
+            </div>
+            <hr>
+
+
+            <div id="paragraph" class="paraFont p1">
+                <p>
+                    The abstraction principle helps to hide all relevant data about object(calculation) in order to
+                    reduce complexity and increase efficiency.
+
+                <p>get_result() is performing an addition method in line number 35 of image(c or e). It's simply calling
+                    a loop in addition class of calculator. In the loop, we
+                    have an add function which abstracting a process of doing addition in a list of numbers.
+
+                <div style="width:610px;height:325px;border:1px solid #000;">
+                    <div class="paraFont p1 ms-1 ">
+                        <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 600px;">
+                            <img src="/static/images/oops page pics/highlighted.jpg"
+                                 style="width:100%" alt=""><br>
+                            <h6 style="text-align:center">image(e) Highlighted portion from image c</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <p>
+
+                    we have a one function as a list and another is add() in a loop of def get_result(self).
+                <p>
+                    add(value, sum_of_values) function calls the addition calculation method. Both function will give a
+                    sum of list of numbers.
+                    Thus, More complex of lists are broken down in one the function to another function and that called
+                    Abstraction.
+                <p>
+                    This entire process of code will be hidden from user and only will invoke by on classes Addition()
+                    Subtraction(), Multiplication(), Division(). User is only allowed to run these methods according to
+                    their task.
+
+            </div>
+
+
+        </div>
+
+
+        <div class="col">
+            <br>
+            <br>
+            <div class="paraFont p1">
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 400px;">
+                    <img src="https://img.freepik.com/free-vector/calculator-concept-illustration_114360-1239.jpg?w=740&t=st=1648184398~exp=1648184998~hmac=ebfd792b05ba0a1006aa2156e76b028c069253dfd61103b712dce916c6bf6937"
+                         class="d-block w-100" alt="..."><br>
+                    <h6 style="text-align:center">Read Calculator program in terms of OOPS!</h6></div>
+                <hr>
+
+            </div>
+            <br>
+            <br>
+
+            <div style="width:416px;height:665px;border:1px solid #000;">
+                <div class="paraFont p1 ms-1 ">
+                    <div class="d-flex flex-column align-items-stretch flex-shrink-0" style="width: 407px;">
+                        <img src="/static/images/oops page pics/sub class-inheritance.jpg"
+                             style="width:100%" alt="">
+                        <br>
+                        <h6 style="text-align:center">image(c) Calculator program demonstrates
+                            Inheritance</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
 </body>
 </html>

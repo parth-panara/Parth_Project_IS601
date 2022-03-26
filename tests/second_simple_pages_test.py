@@ -74,4 +74,3 @@ def test_request_terms_solid_overview(client):
     assert b'<ul style="list-style-type:circle;">' in response.data
     assert b'<li>Makes code more robust because of less side effects</li>' in response.data
     assert b'<li>Each class is responsible for one thing.</li>' in response.data
-
