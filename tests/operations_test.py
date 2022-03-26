@@ -8,6 +8,11 @@ def test_calculator_operations_add():
     assert Addition.add(1, 1) == 2
 
 
+def test_calculator_operations_add_float():
+    """Testing the Calculator"""
+    assert Addition.add(1.7, 2.5) == 4.2
+
+
 def test_calculator_operations_subtract():
     """Testing the Calculator"""
     assert Subtraction.subtract(1, 1) == 0
@@ -16,6 +21,11 @@ def test_calculator_operations_subtract():
 def test_calculator_operations_multiply():
     """Testing the Calculator"""
     assert Multiplication.multiply(1, 1) == 1
+
+
+def test_calculator_operations_multiply_float():
+    """Testing the Calculator"""
+    assert Multiplication.multiply(1.5, 2.5) == 3.75
 
 
 def test_calculator_operations_divide():

@@ -53,4 +53,4 @@ def test_calculation_divide_get_result_method():
     """Testing the Calculator Division"""
     tuple_list = (1, 2)
     calculation = Division.create(tuple_list)
-    assert calculation.get_result() == 0
+    assert calculation.get_result() == 0.0
