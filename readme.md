@@ -42,5 +42,3 @@ Submitted by: Parth Panara
 
 ### SOLID
 ![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/Solid.jpg)
-
-(Note: These screenshots have been captured on the 75% zoom level of the webpage server screen.)
