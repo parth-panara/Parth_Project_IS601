@@ -17,30 +17,30 @@ Submitted by: Parth Panara
 ## All pages Screenshot of project from Heroku app Server
 
 ### Home page 
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/Home%20page.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/home.jpg)
 
 ### GIT page
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/Index%20page.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/Git.jpg)
 
 ### Docker
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page1.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/Docker.jpg)
 
 ### Python/ Flask
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page2.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/python.jpg)
 
 ### CI/ CD
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page3.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/ci-cd.jpg)
 
 ### Terms
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page4.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/terms.jpg)
 
 ### AAA
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page4.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/aaa.jpg)
 
 ### OOPS
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page4.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/oops.jpg)
 
 ### SOLID
-![Running Program](https://github.com/parth-panara/Parth_Project_1/blob/master/app/static/images/page4.jpg)
+![Running Program](https://github.com/parth-panara/Parth_Project_IS601/blob/master/app/static/images/Solid.jpg)
 
-(Note: These screenshots have been captured on the 67% zoom level of the webpage server screen.)
+(Note: These screenshots have been captured on the 75% zoom level of the webpage server screen.)
